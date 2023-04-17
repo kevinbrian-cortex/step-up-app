@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { ButtonIncrement, ButtonPrimaryWithIcon } from "./components/Button";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import PromotionBanner from "./components/PromotionBanner";
+import MainBanner from "./components/MainBanner";
 
 export default function App() {
-  console.log("Changing Console")
   return (
-    <View style={styles.container}>
-      <Text className="text-red-500 text-xl">Hello World</Text>
-      <StatusBar style="auto" />
+    <View className="p-2">
+      <PromotionBanner />
+      <MainBanner />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
