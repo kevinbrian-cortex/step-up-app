@@ -5,7 +5,7 @@ export default function App() {
   console.log("Changing Console")
   return (
     <View style={styles.container}>
-      <Text className="">Hello World</Text>
+      <Text className="text-red-500 text-xl">Hello World</Text>
       <StatusBar style="auto" />
     </View>
   );
