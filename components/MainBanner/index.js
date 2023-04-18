@@ -3,7 +3,7 @@ import { ImageBackground, Text, View } from "react-native";
 export default () => {
   return (
     <ImageBackground
-      source={require("../../assets/products/product-1.jpg")}
+      source={require("../../assets/products/product-2.jpg")}
       resizeMethod="resize"
       resizeMode="cover"
       style={{
@@ -18,7 +18,7 @@ export default () => {
       className="mt-2"
     >
       <View className="flex-1 align-text-bottom justify-end">
-        <View className="p-4 bg-white opacity-70 m-2 rounded-lg">
+        <View className="p-4 bg-white blur-2 opacity-70 m-2 rounded-lg">
           <Text className="font-bold text-xl">
             New Sneakers are waiting for you!
           </Text>
