@@ -5,6 +5,7 @@ import {
   MD3LightTheme as DefaultTheme,
 } from "react-native-paper";
 import lightTheme from "./theme/lightTheme";
+import { SafeAreaView } from "react-native";
 
 const theme = {
   ...DefaultTheme,
@@ -13,8 +14,10 @@ const theme = {
 
 export default function App() {
   return (
-    <PaperProvider theme={theme}>
-      <Routes />
-    </PaperProvider>
+    <SafeAreaView style={{ flex: 1 }}>
+      <PaperProvider theme={theme}>
+        <Routes />
+      </PaperProvider>
+    </SafeAreaView>
   );
 }

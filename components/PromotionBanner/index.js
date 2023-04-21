@@ -1,19 +1,34 @@
-import { Text, View } from "react-native";
 import { ButtonSecondary } from "../Button";
+import { Button, Card, Text, useTheme } from "react-native-paper";
 
 export default () => {
-  return (
-    <View className="bg-green-400 p-6 flex-row items-center justify-between rounded-xl m-3 ml-0 mr-0">
-      <View>
-        <Text className="text-slate-900 text-2xl font-bold">Summer Sale!</Text>
-        <Text className="text-slate-900 text-base">Now up to -70%</Text>
-      </View>
+  const theme = useTheme();
 
-      <ButtonSecondary
-        bgColor={"white"}
-        textColor={"black"}
-        text={"Check it out"}
-      />
-    </View>
+  return (
+    <Card
+      contentStyle={{
+        flexDirection: "row",
+        justifyContent: "space-between",
+      }}
+      className="bg-green-400 p-2"
+    >
+      <Card.Content>
+        <Text className="font-bold text-2xl">Summer Sale!</Text>
+        <Text className="text-md pb-4">Now up to -70% offs</Text>
+      </Card.Content>
+
+      <Card.Actions>
+        <Button
+          mode="contained"
+          buttonColor={"white"}
+          textColor={theme.colors.primary}
+          icon={"arrow-right"}
+          contentStyle={{ flexDirection: "row-reverse" }}
+          className="rounded-md p-0"
+        >
+          Check it out
+        </Button>
+      </Card.Actions>
+    </Card>
   );
 };
