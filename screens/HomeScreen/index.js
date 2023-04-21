@@ -3,6 +3,7 @@ import React from "react";
 import { Appbar, useTheme } from "react-native-paper";
 import PromotionBanner from "../../components/PromotionBanner";
 import MainBanner from "../../components/MainBanner";
+import CategoryList from "../../components/CategoryList";
 
 export default () => {
   const theme = useTheme();
@@ -24,6 +25,9 @@ export default () => {
 
       {/* main banner */}
       <MainBanner />
+
+      {/* popular categories */}
+      <CategoryList />
     </ScrollView>
   );
 };
