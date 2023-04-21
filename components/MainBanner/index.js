@@ -24,7 +24,7 @@ export default () => {
         <LinearGradient
           colors={["rgba(0,0,0,0.8)", "transparent"]}
           locations={[0.5, 1]}
-          start={{ x: 0, y: 2 }}
+          start={{ x: 0, y: 3 }}
           end={{ x: 0, y: 0 }}
           className="flex-1 align-text-bottom justify-end rounded-xl"
         >
@@ -32,7 +32,7 @@ export default () => {
             <Text className="font-bold text-xl text-slate-50">
               New Sneakers are waiting for you!
             </Text>
-            <Text className="text-lg text-slate-50">Street Style</Text>
+            <Text className="text-lg text-slate-50">Street Styles</Text>
           </View>
         </LinearGradient>
       </ImageBackground>
